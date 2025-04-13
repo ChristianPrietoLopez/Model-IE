@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Modelo IE – Exploración Interactiva</title>
+    <title>Modelo IE – Portal Oficial</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -13,7 +13,7 @@
         .contenido-central {
             flex: 2;
             padding: 20px;
-            background-color: #fdfdfd;
+            background-color: #ffffff;
         }
         .menu-lateral {
             flex: 1;
@@ -51,19 +51,127 @@
 
 <div class="contenido-central">
     <h1>Bienvenido al Modelo de Iterancias Energéticas (IE)</h1>
-    <p>Explora los bloques temáticos del modelo utilizando el menú lateral derecho. Cada bloque contiene secciones específicas con desarrollos teóricos, simulaciones y validaciones.</p>
+    <p>Este portal presenta la estructura completa del Modelo IE, sus fundamentos, validaciones y proyecciones. Utiliza el menú lateral para navegar por los distintos bloques y profundizar en cada sección temática.</p>
     <iframe name="contenido" src="bloques/01/introduccion.html"></iframe>
 </div>
 
 <div class="menu-lateral">
-    <h2>Bloques del Modelo IE</h2>
-    <h3 onclick="toggle('bloque2')">Bloque 2 – Formulación Matemática</h3>
-    <ul id="bloque2" style="display:none">
-        <li><a href="bloques/02/2.1.html" target="contenido">2.1 – Función ρ_IE(t)</a></li>
-        <li><a href="bloques/02/2.2.html" target="contenido">2.2 – Derivación de a(t) y H(t)</a></li>
-        <li><a href="bloques/02/2.3.html" target="contenido">2.3 – Redshift y magnitud</a></li>
-        <li><a href="bloques/02/2.4.html" target="contenido">2.4 – Espectro primordial</a></li>
-    </ul>
+<h2>Bloques del Modelo IE</h2>
+
+<h3 onclick="toggle('bloque2')">Bloque 2 – Formulación Matemática</h3>
+<ul id="bloque2" style="display:none">
+    <li><a href="bloques/02/2.1.html" target="contenido">2.1 – Función ρ_IE(t)</a></li>
+    <li><a href="bloques/02/2.2.html" target="contenido">2.2 – Derivación a(t) y H(t)</a></li>
+    <li><a href="bloques/02/2.3.html" target="contenido">2.3 – Redshift y magnitud</a></li>
+    <li><a href="bloques/02/2.4.html" target="contenido">2.4 – Espectro primordial</a></li>
+    <li><a href="bloques/02/2.5.html" target="contenido">2.5 – Resumen de fórmulas</a></li>
+    <li><a href="bloques/02/2.6.html" target="contenido">2.6 – Ejemplo resuelto</a></li>
+    <li><a href="bloques/02/2.7.html" target="contenido">2.7 – Inclusión de la radiación</a></li>
+    <li><a href="bloques/02/2.8.html" target="contenido">2.8 – Validación lagrangiana</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque3')">Bloque 3 – Validación Observacional</h3>
+<ul id="bloque3" style="display:none">
+    <li><a href="bloques/03/3.1.html" target="contenido">3.1 – Supernovas Ia</a></li>
+    <li><a href="bloques/03/3.2.html" target="contenido">3.2 – CMB y z_dec</a></li>
+    <li><a href="bloques/03/3.3.html" target="contenido">3.3 – BAO</a></li>
+    <li><a href="bloques/03/3.4.html" target="contenido">3.4 – BBN</a></li>
+    <li><a href="bloques/03/3.5.html" target="contenido">3.5 – Modos y CMB</a></li>
+    <li><a href="bloques/03/3.6.html" target="contenido">3.6 – FRBs</a></li>
+    <li><a href="bloques/03/3.7.html" target="contenido">3.7 – Cociente r(t)</a></li>
+    <li><a href="bloques/03/3.8.html" target="contenido">3.8 – Empalme IE–BBN</a></li>
+    <li><a href="bloques/03/3.9.html" target="contenido">3.9 – Índice n_s</a></li>
+    <li><a href="bloques/03/3.10.html" target="contenido">3.10 – Comparación con ΛCDM</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque4')">Bloque 4 – Marco Conceptual</h3>
+<ul id="bloque4" style="display:none">
+    <li><a href="bloques/04/4.1.html" target="contenido">4.1 – Clasificación de partículas</a></li>
+    <li><a href="bloques/04/4.2.html" target="contenido">4.2 – Comparación CSL y LQC</a></li>
+    <li><a href="bloques/04/4.3.html" target="contenido">4.3 – Proyecciones modales</a></li>
+    <li><a href="bloques/04/4.4.html" target="contenido">4.4 – Interferencia modal</a></li>
+    <li><a href="bloques/04/4.5.html" target="contenido">4.5 – Simulación doble rendija</a></li>
+    <li><a href="bloques/04/4.6.html" target="contenido">4.6 – 3 rendijas</a></li>
+    <li><a href="bloques/04/4.7.html" target="contenido">4.7 – Flashes y trayectorias</a></li>
+    <li><a href="bloques/04/4.8.html" target="contenido">4.8 – Interferómetro Mach-Zehnder</a></li>
+    <li><a href="bloques/04/4.9.html" target="contenido">4.9 – Densidad intrínseca ρᵢ</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque5')">Bloque 5 – Física Cuántica del Remanente</h3>
+<ul id="bloque5" style="display:none">
+    <li><a href="bloques/05/5.1.html" target="contenido">5.1 – Fusión Modal</a></li>
+    <li><a href="bloques/05/5.2.html" target="contenido">5.2 – Descomposición Modal</a></li>
+    <li><a href="bloques/05/5.3.html" target="contenido">5.3 – Campos emergentes</a></li>
+    <li><a href="bloques/05/5.4.html" target="contenido">5.4 – Decaimiento del muón</a></li>
+    <li><a href="bloques/05/5.5.html" target="contenido">5.5 – Bosón de Higgs</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque6')">Bloque 6 – Materia Oscura y Validaciones Extendidas</h3>
+<ul id="bloque6" style="display:none">
+    <li><a href="bloques/06/6.1.html" target="contenido">6.1 – Remanentes como materia oscura</a></li>
+    <li><a href="bloques/06/6.2.html" target="contenido">6.2 – Validación cuantitativa</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque7')">Bloque 7 – Oscilaciones de Neutrinos</h3>
+<ul id="bloque7" style="display:none">
+    <li><a href="bloques/07/7.1.html" target="contenido">7.1 – Espacio de parámetros</a></li>
+    <li><a href="bloques/07/7.2.html" target="contenido">7.2 – Formulación modal IE</a></li>
+    <li><a href="bloques/07/7.3.html" target="contenido">7.3 – Validación con datos reales</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque8')">Bloque 8 – Espectro Primordial</h3>
+<ul id="bloque8" style="display:none">
+    <li><a href="bloques/08/8.1.html" target="contenido">8.1 – Derivación del espectro IE</a></li>
+    <li><a href="bloques/08/8.2.html" target="contenido">8.2 – Perturbaciones modales</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque9')">Bloque 9 – Comparación con Modelos Cuánticos</h3>
+<ul id="bloque9" style="display:none">
+    <li><a href="bloques/09/9.1.html" target="contenido">9.1 – Comparación IE vs LQG</a></li>
+    <li><a href="bloques/09/9.2.html" target="contenido">9.2 – Validación GRW/CSL</a></li>
+    <li><a href="bloques/09/9.3.html" target="contenido">9.3 – Emergencia del espacio</a></li>
+    <li><a href="bloques/09/9.4.html" target="contenido">9.4 – Análisis pendiente CMB</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque10')">Bloque 10 – Entrelazamiento y Emergencia Cuántica</h3>
+<ul id="bloque10" style="display:none">
+<li><a href="bloques/10/10.1.html" target="contenido">10.1 – Sección 1</a></li>
+<li><a href="bloques/10/10.2.html" target="contenido">10.2 – Sección 2</a></li>
+<li><a href="bloques/10/10.3.html" target="contenido">10.3 – Sección 3</a></li>
+<li><a href="bloques/10/10.4.html" target="contenido">10.4 – Sección 4</a></li>
+<li><a href="bloques/10/10.5.html" target="contenido">10.5 – Sección 5</a></li>
+<li><a href="bloques/10/10.6.html" target="contenido">10.6 – Sección 6</a></li>
+<li><a href="bloques/10/10.7.html" target="contenido">10.7 – Sección 7</a></li>
+<li><a href="bloques/10/10.8.html" target="contenido">10.8 – Sección 8</a></li>
+<li><a href="bloques/10/10.9.html" target="contenido">10.9 – Sección 9</a></li>
+<li><a href="bloques/10/10.10.html" target="contenido">10.10 – Sección 10</a></li>
+<li><a href="bloques/10/10.11.html" target="contenido">10.11 – Sección 11</a></li>
+<li><a href="bloques/10/10.12.html" target="contenido">10.12 – Sección 12</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque11')">Bloque 11 – Hamiltoniano Cuántico y LIGO</h3>
+<ul id="bloque11" style="display:none">
+<li><a href="bloques/11/11.1.html" target="contenido">11.1 – Sección 1</a></li>
+<li><a href="bloques/11/11.2.html" target="contenido">11.2 – Sección 2</a></li>
+<li><a href="bloques/11/11.3.html" target="contenido">11.3 – Sección 3</a></li>
+<li><a href="bloques/11/11.4.html" target="contenido">11.4 – Sección 4</a></li>
+<li><a href="bloques/11/11.5.html" target="contenido">11.5 – Sección 5</a></li>
+<li><a href="bloques/11/11.6.html" target="contenido">11.6 – Sección 6</a></li>
+<li><a href="bloques/11/11.7.html" target="contenido">11.7 – Sección 7</a></li>
+<li><a href="bloques/11/11.8.html" target="contenido">11.8 – Sección 8</a></li>
+<li><a href="bloques/11/11.9.html" target="contenido">11.9 – Sección 9</a></li>
+</ul>
+
+<h3 onclick="toggle('bloque12')">Bloque 12 – Colapso, Evaporación y Remanentes</h3>
+<ul id="bloque12" style="display:none">
+<li><a href="bloques/12/12.1.html" target="contenido">12.1 – Sección 1</a></li>
+<li><a href="bloques/12/12.2.html" target="contenido">12.2 – Sección 2</a></li>
+<li><a href="bloques/12/12.3.html" target="contenido">12.3 – Sección 3</a></li>
+<li><a href="bloques/12/12.4.html" target="contenido">12.4 – Sección 4</a></li>
+<li><a href="bloques/12/12.5.html" target="contenido">12.5 – Sección 5</a></li>
+<li><a href="bloques/12/12.6.html" target="contenido">12.6 – Sección 6</a></li>
+<li><a href="bloques/12/12.7.html" target="contenido">12.7 – Sección 7</a></li>
+</ul>
 </div>
 
 </body>
