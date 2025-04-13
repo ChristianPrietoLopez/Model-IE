@@ -1,0 +1,22 @@
+body {
+    font-family: 'CMU Serif', serif;
+    background-color: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: #00ccff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+main {
+    padding: 20px;
+}
