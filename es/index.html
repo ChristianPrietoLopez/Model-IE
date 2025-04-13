@@ -2,28 +2,69 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Modelo IE – Exploración Temática</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Modelo IE – Exploración Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .contenido-central {
+            flex: 2;
+            padding: 20px;
+            background-color: #fdfdfd;
+        }
+        .menu-lateral {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-left: 1px solid #ccc;
+            overflow-y: auto;
+            height: 100vh;
+        }
+        .menu-lateral h3 {
+            cursor: pointer;
+            color: #003366;
+        }
+        .menu-lateral ul {
+            list-style: none;
+            padding-left: 15px;
+        }
+        .menu-lateral li {
+            margin: 5px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 75vh;
+            border: none;
+        }
+    </style>
+    <script>
+        function toggle(id) {
+            var el = document.getElementById(id);
+            el.style.display = el.style.display === "none" ? "block" : "none";
+        }
+    </script>
 </head>
 <body>
-<header>
-    <h1>Modelo IE – Exploración Temática</h1>
-</header>
-<main>
-    <ul>
-        <li><a href="bloques/01/index.html">Bloque 1: Introducción general y narrativa fundacional</a></li>
-        <li><a href="bloques/02/index.html">Bloque 2: Formulación Matemática Base del Modelo IE</a></li>
-        <li><a href="bloques/03/index.html">Bloque 3: Validación Observacional del Modelo IE</a></li>
-        <li><a href="bloques/04/index.html">Bloque 4: Marco Conceptual del Modelo IE</a></li>
-        <li><a href="bloques/05/index.html">Bloque 5: Física Cuántica del Remanente IE</a></li>
-        <li><a href="bloques/06/index.html">Bloque 6: Materia Oscura y Validaciones Cosmológicas Extendidas</a></li>
-        <li><a href="bloques/07/index.html">Bloque 7: Oscilaciones de Neutrinos en el Modelo IE</a></li>
-        <li><a href="bloques/08/index.html">Bloque 8: Espectro Primordial Modal del Modelo IE</a></li>
-        <li><a href="bloques/09/index.html">Bloque 9: Comparación con Modelos Cuánticos Alternativos</a></li>
-        <li><a href="bloques/10/index.html">Bloque 10: Entrelazamiento, Decoherencia y Emergencia Cuántica</a></li>
-        <li><a href="bloques/11/index.html">Bloque 11: Hamiltoniano Cuántico, Flashes y Validación con LIGO</a></li>
-        <li><a href="bloques/12/index.html">Bloque 12: Colapso, Evaporación y Remanentes Cuánticos</a></li>
+
+<div class="contenido-central">
+    <h1>Bienvenido al Modelo de Iterancias Energéticas (IE)</h1>
+    <p>Explora los bloques temáticos del modelo utilizando el menú lateral derecho. Cada bloque contiene secciones específicas con desarrollos teóricos, simulaciones y validaciones.</p>
+    <iframe name="contenido" src="bloques/01/introduccion.html"></iframe>
+</div>
+
+<div class="menu-lateral">
+    <h2>Bloques del Modelo IE</h2>
+    <h3 onclick="toggle('bloque2')">Bloque 2 – Formulación Matemática</h3>
+    <ul id="bloque2" style="display:none">
+        <li><a href="bloques/02/2.1.html" target="contenido">2.1 – Función ρ_IE(t)</a></li>
+        <li><a href="bloques/02/2.2.html" target="contenido">2.2 – Derivación de a(t) y H(t)</a></li>
+        <li><a href="bloques/02/2.3.html" target="contenido">2.3 – Redshift y magnitud</a></li>
+        <li><a href="bloques/02/2.4.html" target="contenido">2.4 – Espectro primordial</a></li>
     </ul>
-</main>
+</div>
+
 </body>
 </html>
