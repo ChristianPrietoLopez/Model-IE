@@ -1,0 +1,42 @@
+body {
+    font-family: 'Georgia', serif;
+    color: #222;
+    margin: 0;
+    background-color: #fdfdfd;
+}
+
+h1, h2, h3 {
+    color: #003366;
+}
+
+a {
+    text-decoration: none;
+    color: #005599;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.menu-lateral h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #002244;
+}
+
+.menu-lateral h3 {
+    margin: 10px 0 5px 0;
+}
+
+.menu-lateral ul {
+    margin: 0 0 10px 0;
+}
+
+iframe {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
