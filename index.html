@@ -1,30 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iterance Energy Model (IE)</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iterance Energy Model (IE)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #001f3f, #003366);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1em;
+      margin-top: 5px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    .lang-button {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 8px 16px;
+      background: white;
+      color: #003366;
+      border: 2px solid #ffffffaa;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .lang-button:hover {
+      background: #003366;
+      color: white;
+    }
+
+    .flag {
+      width: 18px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    main h2 {
+      color: #222;
+    }
+
+    main p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+  </style>
+  <script>
+    // Redirección automática según idioma del navegador
+    window.addEventListener('DOMContentLoaded', () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith('es')) {
+        window.location.href = 'es/index.html';
+      } else if (userLang.startsWith('en')) {
+        window.location.href = 'en/index.html';
+      }
+    });
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Iterance Energy Model (IE)</h1>
-        <p>Time as an energetic flow, not as a coordinate</p>
-        <nav>
-            <a href="/es/index.html">Español</a> |
-            <a href="/en/index.html">English</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>This site presents the IE Model, a new approach to the energetic nature of the universe, where time emerges from energy flow.</p>
-            <p>Explore the thematic blocks, simulations, and scientific validations that make up this model.</p>
-        </section>
-    </main>
+
+  <header>
+    <h1>Iterance Energy Model (IE)</h1>
+    <p>Time as an energetic flow, not as a coordinate</p>
+    <nav>
+      <a class="lang-button" href="es/index.html">
+        <img class="flag" src="https://flagcdn.com/es.svg" alt="ES"> Español
+      </a>
+      <a class="lang-button" href="en/index.html">
+        <img class="flag" src="https://flagcdn.com/gb.svg" alt="EN"> English
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome</h2>
+    <p>This site presents the IE Model, a new approach to the energetic nature of the universe, where time emerges from energy flow.</p>
+    <p>Explore the thematic blocks, simulations, and scientific validations that make up this model.</p>
+  </main>
+
 </body>
 </html>
