@@ -23,7 +23,7 @@ main {
 
 #botonAsistente {
     position: fixed;
-    bottom: 100px;
+    bottom: 40px;
     right: 20px;
     background-color: #003366;
     color: white;
