@@ -2,124 +2,125 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Model IE — Iterative Energy Model</title>
-  <meta name="description" content="Model IE proposes a cosmological framework where time and expansion emerge from energetic iterations. Official website and preprint hub." />
-  <link rel="canonical" href="https://model-ie.com/" />
-  <link rel="icon" href="/favicon.png" />
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Model IE — Iterative Energy Model" />
-  <meta property="og:description" content="Cosmology from energetic iterations. Preprint, comparisons with ΛCDM, implications, MCMC results." />
-  <meta property="og:url" content="https://model-ie.com/" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Model IE",
-    "url":"https://model-ie.com/",
-    "logo":"https://model-ie.com/logo.png",
-    "sameAs":[ "https://x.com/model_ie" ]
-  }
-  </script>
-  <style>
-    :root { --bg:#0b1020; --fg:#e9edf5; --muted:#9fb0c3; --accent:#5fb3ff; }
-    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif;line-height:1.55}
-    .wrap{max-width:980px;margin:0 auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;margin:8px 0 24px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand img{height:36px;width:auto}
-    .brand b{font-size:1.15rem;letter-spacing:.4px}
-    .lang a{margin-left:10px;text-decoration:none;color:var(--muted);font-weight:600}
-    .lang a:hover{color:var(--fg)}
-    .hero{padding:28px 0 12px;border-top:1px solid #1a2440;border-bottom:1px solid #1a2440}
-    h1{font-size:2rem;margin:.2rem 0 0}
-    p.lead{font-size:1.1rem;color:var(--muted);max-width:75ch}
-    .actions{margin:18px 0 8px;display:flex;gap:10px;flex-wrap:wrap}
-    .btn{background:var(--accent);color:#05142a;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
-    .btn.ghost{background:transparent;border:1px solid #284a7a;color:var(--fg)}
-    section{padding:26px 0;border-bottom:1px solid #16213f}
-    h2{font-size:1.35rem;margin:0 0 .5rem}
-    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    footer{color:var(--muted);font-size:.9rem;padding:20px 0}
-    a{color:#8ec7ff}
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Model IE — Iterative Energy Model</title>
+    <meta name="description" content="Model IE proposes a cosmological framework where time and expansion emerge from energetic iterations. Official website and preprint hub." />
+    <link rel="canonical" href="https://model-ie.com/" />
+    <link rel="icon" href="/favicon.png" />
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Model IE — Iterative Energy Model" />
+    <meta property="og:description" content="Cosmology from energetic iterations. Preprint, comparisons with ΛCDM, implications, MCMC results." />
+    <meta property="og:url" content="https://model-ie.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"Model IE","url":"https://model-ie.com/","logo":"https://model-ie.com/logo.png","sameAs":["https://x.com/model_ie"]}
+    </script>
+    <style>
+        :root { --bg:#0b1020; --fg:#e9edf5; --muted:#9fb0c3; --accent:#5fb3ff; }
+        html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif;line-height:1.55}
+        .wrap{max-width:980px;margin:0 auto;padding:24px}
+        header{display:flex;align-items:center;justify-content:space-between;margin:8px 0 24px}
+        .brand{display:flex;gap:12px;align-items:center}
+        .brand img{height:36px;width:auto}
+        .brand b{font-size:1.15rem;letter-spacing:.4px}
+        .lang a{margin-left:10px;text-decoration:none;color:var(--muted);font-weight:600}
+        .lang a:hover{color:var(--fg)}
+        .hero{padding:28px 0 12px;border-top:1px solid #1a2440;border-bottom:1px solid #1a2440}
+        h1{font-size:2rem;margin:.2rem 0 0}
+        p.lead{font-size:1.1rem;color:var(--muted);max-width:75ch}
+        .actions{margin:18px 0 8px;display:flex;gap:10px;flex-wrap:wrap}
+        .btn{background:var(--accent);color:#05142a;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+        .btn.ghost{background:transparent;border:1px solid #284a7a;color:var(--fg)}
+        section{padding:26px 0;border-bottom:1px solid #16213f}
+        h2{font-size:1.35rem;margin:0 0 .5rem}
+        .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+        footer{color:var(--muted);font-size:.9rem;padding:20px 0}
+        a{color:#8ec7ff}
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <!-- pon tu espiral como /logo.png -->
-        <img src="/logo.png" alt="Model IE logo">
-        <b>Model IE</b>
-      </div>
-      <nav class="lang" aria-label="Language">
-        <span>Language:</span>
-        <a href="/en/">🇬🇧 English</a>
-        <a href="/es/">🇪🇸 Español</a>
-      </nav>
-    </header>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <img src="/logo.png" alt="Model IE logo">
+                <b>Model IE</b>
+            </div>
+            <nav class="lang" aria-label="Language">
+                <span>Language:</span>
+                <!-- 🇬🇧 permanece en la portada -->
+                <a href="/">🇬🇧 English</a>
+                <!-- 🇪🇸 va a la portada española que crearás en /es/home/ -->
+                <a href="/es/home/">🇪🇸 Español</a>
+            </nav>
+        </header>
 
-    <div class="hero">
-      <h1>Iterative Energy Model</h1>
-      <p class="lead">
-        Model IE is a cosmological framework where <em>time</em> and the observed
-        expansion emerge from <strong>energetic iterations</strong>. Instead of fixed
-        constituents (e.g., a rigid Λ term), IE treats energy flow as the primary driver,
-        producing transient expansion and testable signatures.
-      </p>
-      <div class="actions">
-        <a class="btn" href="/en/preprint/">📄 Preprint (coming soon)</a>
-        <a class="btn ghost" href="/en/comparison/">ΛCDM vs IE</a>
-        <a class="btn ghost" href="/en/implications/">Implications</a>
-        <a class="btn ghost" href="/en/mcmc/">MCMC</a>
-      </div>
+        <div class="hero">
+            <h1>Iterative Energy Model</h1>
+            <p class="lead">
+                Model IE is a cosmological framework where <em>time</em> and the observed
+                expansion emerge from <strong>energetic iterations</strong>. Instead of fixed
+                constituents (e.g., a rigid Λ term), IE treats energy flow as the primary driver,
+                producing transient expansion and testable signatures.
+            </p>
+
+            <!-- NUEVO: botón de "Enter" a la presentación en inglés -->
+            <div class="actions">
+                <a class="btn" href="/en/">Enter — English</a>
+            </div>
+
+            <!-- Botonera original -->
+            <div class="actions">
+                <a class="btn" href="/en/preprint/">📄 Preprint (coming soon)</a>
+                <a class="btn ghost" href="/en/comparison/">ΛCDM vs IE</a>
+                <a class="btn ghost" href="/en/implications/">Implications</a>
+                <a class="btn ghost" href="/en/mcmc/">MCMC</a>
+            </div>
+        </div>
+
+        <section>
+            <h2>At a glance</h2>
+            <div class="grid">
+                <div>
+                    <h3>Cosmos</h3>
+                    <p>IE explains the cosmic history via energy flow and iterative stabilization, with
+                    an emergent notion of time.</p>
+                    <p><a href="/en/">Read the intro →</a></p>
+                </div>
+                <div>
+                    <h3>Comparison with ΛCDM</h3>
+                    <p>Contrast distance moduli, expansion history, and assumptions.
+                    Focus on what IE removes and what it predicts.</p>
+                    <p><a href="/en/comparison/">Open comparison →</a></p>
+                </div>
+                <div>
+                    <h3>Implications</h3>
+                    <p>From transient acceleration to observational traces and conceptual
+                    consequences for cosmology and foundations.</p>
+                    <p><a href="/en/implications/">Explore implications →</a></p>
+                </div>
+                <div>
+                    <h3>MCMC</h3>
+                    <p>Datasets, priors, posteriors and fits (Pantheon+, BAO, etc.).</p>
+                    <p><a href="/en/mcmc/">See methods →</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>In progress / restricted</h2>
+            <ul>
+                <li>🔒 Quantum folders & black holes (restricted)</li>
+                <li>🔒 FRBs — modelling in progress</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div>© Model IE — <a href="mailto:contact@model-ie.com">contact@model-ie.com</a></div>
+            <div>Code & site: <a href="https://github.com/ChristianPrietoLopez/Model-IE">GitHub</a> · Updates: <a href="https://x.com/model_ie">X/Twitter</a></div>
+        </footer>
     </div>
-
-    <section>
-      <h2>At a glance</h2>
-      <div class="grid">
-        <div>
-          <h3>Cosmos</h3>
-          <p>IE explains the cosmic history via energy flow and iterative stabilization, with
-          an emergent notion of time.</p>
-          <p><a href="/en/">Read the intro →</a></p>
-        </div>
-        <div>
-          <h3>Comparison with ΛCDM</h3>
-          <p>Contrast distance moduli, expansion history, and assumptions.
-          Focus on what IE removes and what it predicts.</p>
-          <p><a href="/en/comparison/">Open comparison →</a></p>
-        </div>
-        <div>
-          <h3>Implications</h3>
-          <p>From transient acceleration to observational traces and conceptual
-          consequences for cosmology and foundations.</p>
-          <p><a href="/en/implications/">Explore implications →</a></p>
-        </div>
-        <div>
-          <h3>MCMC</h3>
-          <p>Datasets, priors, posteriors and fits (Pantheon+, BAO, etc.).</p>
-          <p><a href="/en/mcmc/">See methods →</a></p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>In progress / restricted</h2>
-      <ul>
-        <li>🔒 Quantum folders & black holes (restricted)</li>
-        <li>🔒 FRBs — modelling in progress</li>
-      </ul>
-    </section>
-
-    <footer>
-      <div>© Model IE — <a href="mailto:contact@model-ie.com">contact@model-ie.com</a></div>
-      <div>Code & site: <a href="https://github.com/ChristianPrietoLopez/Model-IE">GitHub</a> · Updates: <a href="https://x.com/model_ie">X/Twitter</a></div>
-    </footer>
-  </div>
 </body>
 </html>
