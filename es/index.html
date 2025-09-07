@@ -1,202 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Modelo IE – Portal Oficial</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            display: flex;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        .contenido-central {
-            flex: 2;
-            padding: 20px;
-            background-color: #ffffff;
-        }
-        .menu-lateral {
-            flex: 1;
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-left: 1px solid #ccc;
-            overflow-y: auto;
-            height: 100vh;
-        }
-        .menu-lateral h3 {
-            cursor: pointer;
-            color: #003366;
-        }
-        .menu-lateral ul {
-            list-style: none;
-            padding-left: 15px;
-        }
-        .menu-lateral li {
-            margin: 5px 0;
-        }
-        iframe {
-            width: 100%;
-            height: 75vh;
-            border: none;
-        }
-    </style>
-    <script>
-        function toggle(id) {
-            var el = document.getElementById(id);
-            el.style.display = el.style.display === "none" ? "block" : "none";
-        }
-    </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Model IE — Introducción</title>
+  <meta name="description" content="Introducción a Model IE (Modelo de Iterancias Energéticas): un marco cosmológico donde el tiempo y la expansión emergen del flujo de energía." />
+  <link rel="canonical" href="https://model-ie.com/es/" />
+  <link rel="icon" href="/favicon.png" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Model IE — Introducción" />
+  <meta property="og:description" content="Cosmología desde iteraciones energéticas. Introducción, puntos clave y enlaces a comparación, implicaciones y MCMC." />
+  <meta property="og:url" content="https://model-ie.com/es/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <!-- Estilos mínimos (mismo look del home) -->
+  <style>
+    :root { --bg:#0b1020; --fg:#e9edf5; --muted:#9fb0c3; --accent:#5fb3ff; }
+    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif;line-height:1.6}
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin:8px 0 24px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:36px;width:auto}
+    .brand b{font-size:1.15rem;letter-spacing:.4px}
+    .lang a{margin-left:10px;text-decoration:none;color:var(--muted);font-weight:600}
+    .lang a:hover{color:var(--fg)}
+    h1{font-size:2rem;margin:.2rem 0 .4rem}
+    p.lead{font-size:1.1rem;color:var(--muted);max-width:75ch}
+    .section{padding:22px 0;border-top:1px solid #16213f}
+    h2{font-size:1.35rem;margin:0 0 .5rem}
+    ul.kp{list-style:none;padding:0;margin:10px 0 0}
+    ul.kp li{margin:.5rem 0;padding-left:0}
+    .figure{margin:18px 0;padding:16px;border:1px dashed #2a3b6b;border-radius:8px;color:var(--muted)}
+    .actions{margin:18px 0 8px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#05142a;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn.ghost{background:transparent;border:1px solid #284a7a;color:var(--fg)}
+    footer{color:var(--muted);font-size:.9rem;padding:20px 0;border-top:1px solid #16213f;margin-top:22px}
+    a{color:#8ec7ff}
+  </style>
 </head>
 <body>
-
+  <div class="wrap">
     <header>
-        <h1>Modelo IE</h1>
-        <nav>
-            <a href="../index.html">Portada</a>
-            <a href="../en/index.html">English</a>
-            <a href="../MCMC/index.html">Simulador MCMC</a>
-        </nav>
+      <div class="brand">
+        <a href="/"><img src="/logo.png" alt="Logo de Model IE"></a>
+        <b>Model IE</b>
+      </div>
+      <nav class="lang" aria-label="Idioma">
+        <span>Idioma:</span>
+        <a href="/en/">🇬🇧 English</a>
+        <a href="/es/">🇪🇸 Español</a>
+      </nav>
     </header>
-      
 
-<div class="contenido-central">
-    <h1>Bienvenido al Modelo de Iterancias Energéticas (IE)</h1>
-    <p>Este portal presenta la estructura completa del Modelo IE, sus fundamentos, validaciones y proyecciones. Utiliza el menú lateral para navegar por los distintos bloques y profundizar en cada sección temática.</p>
-    <iframe name="contenido" src="bloques/01/introduccion.html"></iframe>
-</div>
+    <main>
+      <h1>Modelo de Iterancias Energéticas (IE)</h1>
+      <p class="lead">
+        Model IE es un marco cosmológico en el que el <em>tiempo</em> y la expansión observada
+        emergen de <strong>iteraciones energéticas</strong>. En lugar de invocar una constante cosmológica rígida,
+        IE trata el flujo de energía como motor primario, produciendo una aceleración transitoria y firmas medibles.
+      </p>
 
-<div class="menu-lateral">
-<h2>Bloques del Modelo IE</h2>
+      <div class="section">
+        <h2>Contexto</h2>
+        <p>
+          IE se propone como alternativa a ΛCDM. Explica la expansión temprana mediante altas tasas de iteración (sin inflatón)
+          y predice que la aceleración presente <em>no es eterna</em>, sino una fase derivada de la dinámica evolutiva
+          de iteración energética. Esto sugiere expectativas distintas en pruebas con SN Ia, BAO y consistencias del CMB.
+        </p>
+      </div>
 
-<h3 onclick="toggle('bloque1')">Bloque 1 – Introducción General</h3>
-<ul id="bloque1" style="display:none">
-    <li><a href="bloques/01/introduccion.html" target="contenido">1 – Introducción General</a></li>
-</ul>
+      <div class="section">
+        <h2>Puntos clave</h2>
+        <ul class="kp">
+          <li>⏱ <strong>Tiempo emergente</strong> a partir de transiciones (iteraciones) de energía.</li>
+          <li>🌀 <strong>Sin inflatón</strong>: expansión temprana por alta tasa de iteración.</li>
+          <li>🌌 <strong>Energía oscura efectiva decreciente</strong> → la aceleración es transitoria.</li>
+          <li>🔭 <strong>Contrastable</strong> con módulos de distancia SN Ia, escalas BAO y consistencias CMB.</li>
+        </ul>
+      </div>
 
-<h3 onclick="toggle('bloque2')">Bloque 2 – Formulación Matemática</h3>
-<ul id="bloque2" style="display:none">  
-    <li><a href="bloques/02/2.1.html" target="contenido">2.1 – Función ρ_IE(t)</a> (<a href="bloques/02/2.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/02/2.2.html" target="contenido">2.2 – Derivación a(t) y H(t)</a> (<a href="bloques/02/2.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/02/2.3.html" target="contenido">2.3 – Redshift y magnitud</a> (<a href="bloques/02/2.3.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/02/2.4.html" target="contenido">2.4 – Espectro primordial</a> (<a href="bloques/02/2.4.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/02/2.5.html" target="contenido">2.5 – Resumen de fórmulas</a> (<a href="bloques/02/2.5.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/02/2.6.html" target="contenido">2.6 – Ejemplo resuelto</a> (<a href="bloques/02/2.6.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/02/2.7.html" target="contenido">2.7 – Inclusión de la radiación</a> (<a href="bloques/02/2.7.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/02/2.8.html" target="contenido">2.8 – Validación lagrangiana</a> (<a href="bloques/02/2.8.html" target="_blank">abrir</a>)</li>
-    
-</ul>
+      <div class="section">
+        <h2>Figura (placeholder)</h2>
+        <div class="figure">
+          Figura futura: IE vs ΛCDM (p. ej., comparación de μ(z)).<br/>
+          Coloca la imagen como <code>/assets/figs/ie_lcdm.png</code> cuando esté lista.
+        </div>
+      </div>
 
-<h3 onclick="toggle('bloque3')">Bloque 3 – Validación Observacional</h3>
-<ul id="bloque3" style="display:none">
-    <li><a href="bloques/03/3.1.html" target="contenido">3.1 – Supernovas Ia</a> (<a href="bloques/03/3.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.2.html" target="contenido">3.2 – CMB y z_dec</a> (<a href="bloques/03/3.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.3.html" target="contenido">3.3 – BAO</a> (<a href="bloques/03/3.3.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.4.html" target="contenido">3.4 – BBN</a> (<a href="bloques/03/3.4.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.5.html" target="contenido">3.5 – Modos y CMB</a> (<a href="bloques/03/3.5.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.6.html" target="contenido">3.6 – FRBs</a> (<a href="bloques/03/3.6.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.7.html" target="contenido">3.7 – Cociente r(t)</a> (<a href="bloques/03/3.7.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.8.html" target="contenido">3.8 – Empalme IE–BBN</a> (<a href="bloques/03/3.8.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.9.html" target="contenido">3.9 – Índice n_s</a> (<a href="bloques/03/3.9.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/03/3.10.html" target="contenido">3.10 – Comparación con ΛCDM</a> (<a href="bloques/03/3.10.html" target="_blank">abrir</a>)</li>
-</ul>
+      <div class="section">
+        <h2>Próximos pasos</h2>
+        <div class="actions">
+          <a class="btn" href="/es/comparacion/">Comparación con ΛCDM</a>
+          <a class="btn ghost" href="/es/implicaciones/">Implicaciones</a>
+          <a class="btn ghost" href="/es/mcmc/">Validación MCMC</a>
+        </div>
+        <p><em>Proyecto en desarrollo activo. Algunas secciones están restringidas mientras continúa la investigación.</em></p>
+      </div>
+    </main>
 
-<h3 onclick="toggle('bloque4')">Bloque 4 – Marco Conceptual</h3>
-<ul id="bloque4" style="display:none">
-    <li><a href="bloques/04/4.1.html" target="contenido">4.1 – Clasificación de partículas</a> (<a href="bloques/04/4.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/04/4.2.html" target="contenido">4.2 – Comparación CSL y LQC</a> (<a href="bloques/04/4.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/04/4.3.html" target="contenido">4.3 – Proyecciones modales</a> (<a href="bloques/04/4.3.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/04/4.4.html" target="contenido">4.4 – Interferencia modal</a> (<a href="bloques/04/4.4.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/04/4.5.html" target="contenido">4.5 – Simulación doble rendija</a> (<a href="bloques/04/4.5.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/04/4.6.html" target="contenido">4.6 – 3 rendijas</a> (<a href="bloques/04/4.6.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/04/4.7.html" target="contenido">4.7 – Flashes y trayectorias</a> (<a href="bloques/04/4.7.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/04/4.8.html" target="contenido">4.8 – Interferómetro Mach-Zehnder</a> (<a href="bloques/04/4.8.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/04/4.9.html" target="contenido">4.9 – Densidad intrínseca ρᵢ</a> (<a href="bloques/04/4.9.html" target="_blank">abrir</a>)</li>
-</ul>
-
-<h3 onclick="toggle('bloque5')">Bloque 5 – Física Cuántica del Remanente</h3>
-<ul id="bloque5" style="display:none">
-    <li><a href="bloques/05/5.1.html" target="contenido">5.1 – Fusión Modal</a> (<a href="bloques/05/5.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/05/5.2.html" target="contenido">5.2 – Descomposición Modal</a> (<a href="bloques/05/5.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/05/5.3.html" target="contenido">5.3 – Campos emergentes</a> (<a href="bloques/05/5.3.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/05/5.4.html" target="contenido">5.4 – Decaimiento del muón</a> (<a href="bloques/05/5.4.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/05/5.5.html" target="contenido">5.5 – Bosón de Higgs</a> (<a href="bloques/05/5.5.html" target="_blank">abrir</a>)</li>
-</ul>
-
-<h3 onclick="toggle('bloque6')">Bloque 6 – Materia Oscura y Validaciones Extendidas</h3>
-<ul id="bloque6" style="display:none">
-    <li><a href="bloques/06/6.1.html" target="contenido">6.1 – Remanentes como materia oscura</a> (<a href="bloques/06/6.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/06/6.2.html" target="contenido">6.2 – Validación cuantitativa</a> (<a href="bloques/06/6.2.html" target="_blank">abrir</a>)</li>
-</ul>
-
-<h3 onclick="toggle('bloque7')">Bloque 7 – Oscilaciones de Neutrinos</h3>
-<ul id="bloque7" style="display:none">
-    <li><a href="bloques/07/7.1.html" target="contenido">7.1 – Espacio de parámetros</a> (<a href="bloques/07/7.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/07/7.2.html" target="contenido">7.2 – Formulación modal IE</a> (<a href="bloques/07/7.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/07/7.3.html" target="contenido">7.3 – Validación con datos reales</a> (<a href="bloques/07/7.3.html" target="_blank">abrir</a>)</li>
-</ul>
-
-<h3 onclick="toggle('bloque8')">Bloque 8 – Espectro Primordial</h3>
-<ul id="bloque8" style="display:none">
-    <li><a href="bloques/08/8.1.html" target="contenido">8.1 – Derivación del espectro IE</a> (<a href="bloques/08/8.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/08/8.2.html" target="contenido">8.2 – Perturbaciones modales</a> (<a href="bloques/08/8.2.html" target="_blank">abrir</a>)</li>
-</ul>
-
-<h3 onclick="toggle('bloque9')">Bloque 9 – Comparación con Modelos Cuánticos</h3>
-<ul id="bloque9" style="display:none">
-    <li><a href="bloques/09/9.1.html" target="contenido">9.1 – Comparación IE vs LQG</a> (<a href="bloques/09/9.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/09/9.2.html" target="contenido">9.2 – Validación GRW/CSL</a> (<a href="bloques/09/9.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/09/9.3.html" target="contenido">9.3 – Emergencia del espacio</a> (<a href="bloques/09/9.3.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/09/9.4.html" target="contenido">9.4 – Análisis pendiente CMB</a> (<a href="bloques/09/9.4.html" target="_blank">abrir</a>)</li>
-</ul>
-
-<h3 onclick="toggle('bloque10')">Bloque 10 – Entrelazamiento y Emergencia Cuántica</h3>
-<ul id="bloque10" style="display:none">
-    <li><a href="bloques/10/10.1.html" target="contenido">10.1 – Sección 1</a> (<a href="bloques/10/10.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.2.html" target="contenido">10.2 – Sección 2</a> (<a href="bloques/10/10.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.3.html" target="contenido">10.3 – Sección 3</a> (<a href="bloques/10/10.3.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.4.html" target="contenido">10.4 – Sección 4</a> (<a href="bloques/10/10.4.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.5.html" target="contenido">10.5 – Sección 5</a> (<a href="bloques/10/10.5.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.6.html" target="contenido">10.6 – Sección 6</a> (<a href="bloques/10/10.6.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.7.html" target="contenido">10.7 – Sección 7</a> (<a href="bloques/10/10.7.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.8.html" target="contenido">10.8 – Sección 8</a> (<a href="bloques/10/10.8.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.9.html" target="contenido">10.9 – Sección 9</a> (<a href="bloques/10/10.9.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.10.html" target="contenido">10.10 – Sección 10</a> (<a href="bloques/10/10.10.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.11.html" target="contenido">10.11 – Sección 11</a> (<a href="bloques/10/10.11.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/10/10.12.html" target="contenido">10.12 – Sección 12</a> (<a href="bloques/10/10.12.html" target="_blank">abrir</a>)</li>
-    </ul>
-
-<h3 onclick="toggle('bloque11')">Bloque 11 – Hamiltoniano Cuántico y LIGO</h3>
-<ul id="bloque11" style="display:none">
-    <li><a href="bloques/11/11.1.html" target="contenido">11.1 – Sección 1</a> (<a href="bloques/11/11.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/11/11.2.html" target="contenido">11.2 – Sección 2</a> (<a href="bloques/11/11.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/11/11.3.html" target="contenido">11.3 – Sección 3</a> (<a href="bloques/11/11.3.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/11/11.4.html" target="contenido">11.4 – Sección 4</a> (<a href="bloques/11/11.4.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/11/11.5.html" target="contenido">11.5 – Sección 5</a> (<a href="bloques/11/11.5.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/11/11.6.html" target="contenido">11.6 – Sección 6</a> (<a href="bloques/11/11.6.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/11/11.7.html" target="contenido">11.7 – Sección 7</a> (<a href="bloques/11/11.7.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/11/11.8.html" target="contenido">11.8 – Sección 8</a> (<a href="bloques/11/11.8.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/11/11.9.html" target="contenido">11.9 – Sección 9</a> (<a href="bloques/11/11.9.html" target="_blank">abrir</a>)</li>
-</ul>
-
-<h3 onclick="toggle('bloque12')">Bloque 12 – Colapso, Evaporación y Remanentes</h3>
-<ul id="bloque12" style="display:none">
-    <li><a href="bloques/12/12.1.html" target="contenido">12.1 – Sección 1</a> (<a href="bloques/12/12.1.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/12/12.2.html" target="contenido">12.2 – Sección 2</a> (<a href="bloques/12/12.2.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/12/12.3.html" target="contenido">12.3 – Sección 3</a> (<a href="bloques/12/12.3.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/12/12.4.html" target="contenido">12.4 – Sección 4</a> (<a href="bloques/12/12.4.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/12/12.5.html" target="contenido">12.5 – Sección 5</a> (<a href="bloques/12/12.5.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/12/12.6.html" target="contenido">12.6 – Sección 6</a> (<a href="bloques/12/12.6.html" target="_blank">abrir</a>)</li>
-    <li><a href="bloques/12/12.7.html" target="contenido">12.7 – Sección 7</a> (<a href="bloques/12/12.7.html" target="_blank">abrir</a>)</li>
-</ul>
-</div>
-<!-- Botón flotante para abrir el asistente IA -->
-<button id="botonAsistente" title="Asistente IA" onclick="abrirAsistente()">💬</button>
-
-<script>
-  function abrirAsistente() {
-    window.open("https://1bb71d69-fd4e-416e-814a-2dbaf09bb900-00-ojj2kiqnpuuo.spock.replit.dev/", "AsistenteIE", "width=450,height=700");
-  }
-</script>
-
+    <footer>
+      <div>© Model IE — <a href="mailto:contact@model-ie.com">contact@model-ie.com</a></div>
+      <div>Código y sitio: <a href="https://github.com/ChristianPrietoLopez/Model-IE">GitHub</a> · Novedades: <a href="https://x.com/model_ie">X/Twitter</a></div>
+    </footer>
+  </div>
 </body>
 </html>
