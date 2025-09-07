@@ -1,74 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Model IE — MCMC Validation</title>
-      <meta name="description" content="Datasets, priors, posteriors and fits used to validate the Iterative Energy Model (IE) via MCMC." />
-      <link rel="icon" href="/favicon.png" />
-      <style>
-            :root{--bg:#0b1020;--fg:#e9edf5;--muted:#9fb0c3;--accent:#5fb3ff}
-            body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif;line-height:1.6}
-            .wrap{max-width:980px;margin:0 auto;padding:24px}
-            header{display:flex;justify-content:space-between;align-items:center;margin:8px 0 24px}
-            .brand{display:flex;gap:12px;align-items:center}.brand img{height:36px}
-            .lang a{margin-left:10px;color:#9fb0c3;text-decoration:none;font-weight:600}
-            h1{margin:.2rem 0 .6rem}
-            .note{color:var(--muted)}
-            section{padding:16px 0;border-top:1px solid #16213f}
-            h2{margin:.2rem 0 .4rem}
-            table{width:100%;border-collapse:collapse;margin-top:8px}
-            td,th{border:1px solid #16213f;padding:8px;text-align:left}
-            code{background:#0d1630;padding:2px 6px;border-radius:6px}
-            .figure{margin:18px 0;padding:16px;border:1px dashed #2a3b6b;border-radius:8px;color:var(--muted)}
-            a{color:#8ec7ff}
-            footer{color:#9fb0c3;font-size:.9rem;margin-top:22px;border-top:1px solid #16213f;padding-top:18px}
-      </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Model IE — MCMC Validation</title>
+    <meta name="description" content="Datasets, priors, posteriors and fits used to validate the Iterative Energy Model (IE) via MCMC." />
+    <link rel="icon" href="/favicon.png" />
+    <style>
+        :root{--bg:#0b1020;--fg:#e9edf5;--muted:#9fb0c3;--accent:#5fb3ff}
+        body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif;line-height:1.6}
+        .wrap{max-width:980px;margin:0 auto;padding:24px}
+        header{display:flex;justify-content:space-between;align-items:center;margin:8px 0 24px}
+        .brand{display:flex;gap:12px;align-items:center}.brand img{height:36px}
+        .lang a{margin-left:10px;color:#9fb0c3;text-decoration:none;font-weight:600}
+        h1{margin:.2rem 0 .6rem}
+        .note{color:var(--muted)}
+        section{padding:16px 0;border-top:1px solid #16213f}
+        h2{margin:.2rem 0 .4rem}
+        table{width:100%;border-collapse:collapse;margin-top:8px}
+        td,th{border:1px solid #16213f;padding:8px;text-align:left}
+        code{background:#0d1630;padding:2px 6px;border-radius:6px}
+        .figure{margin:18px 0;padding:16px;border:1px dashed #2a3b6b;border-radius:8px;color:var(--muted)}
+        a{color:#8ec7ff}
+        footer{color:#9fb0c3;font-size:.9rem;margin-top:22px;border-top:1px solid #16213f;padding-top:18px}
+    </style>
 </head>
 <body>
 <div class="wrap">
-      <header>
-            <div class="brand"><a href="/"><img src="/logo.png" alt="Model IE logo"></a><b>Model IE</b></div>
-            <nav class="lang"><a href="/en/">🇬🇧</a> <a href="/es/">🇪🇸</a></nav>
-      </header>
+    <header>
+        <div class="brand"><a href="/"><img src="/logo.png" alt="Model IE logo"></a><b>Model IE</b></div>
+        <nav class="lang"><a href="/en/">🇬🇧</a> <a href="/es/">🇪🇸</a></nav>
+    </header>
 
-      <h1>MCMC Validation</h1>
-      <p class="note">Datasets, priors, sampling details and posterior summaries for IE.</p>
+    <h1>MCMC Validation</h1>
+    <p class="note">Datasets, priors, sampling details and posterior summaries for IE.</p>
 
-      <section>
-            <h2>Datasets</h2>
-            <table>
-                  <tr><th>Set</th><th>Reference</th><th>Notes</th></tr>
-                  <tr><td>Pantheon+</td><td>SN Ia</td><td>Distance moduli μ(z)</td></tr>
-                  <tr><td>BAO</td><td>Multiple</td><td>Acoustic scales</td></tr>
-                  <tr><td>CMB</td><td>Planck-like</td><td>Consistency relations</td></tr>
-            </table>
-      </section>
+    <section>
+        <h2>Datasets</h2>
+        <table>
+            <tr><th>Set</th><th>Reference</th><th>Notes</th></tr>
+            <tr><td>Pantheon+</td><td>SN Ia</td><td>Distance moduli μ(z)</td></tr>
+            <tr><td>BAO</td><td>Multiple</td><td>Acoustic scales</td></tr>
+            <tr><td>CMB</td><td>Planck-like</td><td>Consistency relations</td></tr>
+        </table>
+    </section>
 
-      <section>
-            <h2>Priors & parameters</h2>
-            <p>List the IE parameters and priors here (uniform/Gaussian etc.).</p>
-            <pre><code># Example (placeholder)
+    <section>
+        <h2>Priors & parameters</h2>
+        <p>List the IE parameters and priors here (uniform/Gaussian etc.).</p>
+        <pre><code># Example (placeholder)
 theta = { a: U(0,1), b: N(0,1), ... }
 </code></pre>
-      </section>
+    </section>
 
-      <section>
-            <h2>Sampling</h2>
-            <p>Algorithm (e.g., emcee/NUTS), chains, burn-in, convergence diagnostics (R̂, ESS).</p>
-      </section>
+    <section>
+        <h2>Sampling</h2>
+        <p>Algorithm (e.g., emcee/NUTS), chains, burn-in, convergence diagnostics (R̂, ESS).</p>
+    </section>
 
-      <section>
-            <h2>Posteriors & fits</h2>
-            <div class="figure">Placeholder corner plot: <code>/assets/figs/ie_corner.png</code></div>
-            <div class="figure">Placeholder μ(z) fit: <code>/assets/figs/ie_fit_mu.png</code></div>
-      </section>
+    <section>
+        <h2>Posteriors & fits</h2>
+        <div class="figure">Placeholder corner plot: <code>/assets/figs/ie_corner.png</code></div>
+        <div class="figure">Placeholder μ(z) fit: <code>/assets/figs/ie_fit_mu.png</code></div>
+    </section>
 
-      <p>See also: <a href="/en/comparison/">ΛCDM vs IE</a> · <a href="/en/implications/">Implications</a></p>
+    <p>See also: <a href="/en/comparison/">ΛCDM vs IE</a> · <a href="/en/implications/">Implications</a></p>
 
-      <footer>
-            © Model IE — <a href="mailto:contact@model-ie.com">contact@model-ie.com</a>
-      </footer>
+    <footer>
+        © Model IE — <a href="mailto:contact@model-ie.com">contact@model-ie.com</a>
+    </footer>
 </div>
 </body>
 </html>
